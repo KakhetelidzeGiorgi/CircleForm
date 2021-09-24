@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layout_background_color"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/std_inset" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startGuid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/std_inset" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endGuid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/std_inset" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/botGuid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="@dimen/std_inset" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/outerCircleImgView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/outer_circle_background"
+        app:layout_constraintBottom_toBottomOf="@id/botGuid"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/endGuid"
+        app:layout_constraintHeight_percent=".5"
+        app:layout_constraintStart_toStartOf="@id/startGuid"
+        app:layout_constraintTop_toTopOf="@id/topGuid" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/androidIconImgView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/android_inner_background"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:src="@drawable/ic_android"
+        app:layout_constraintBottom_toBottomOf="@+id/outerCircleImgView"
+        app:layout_constraintDimensionRatio="1:4"
+        app:layout_constraintEnd_toEndOf="@+id/outerCircleImgView"
+        app:layout_constraintHeight_percent=".5"
+        app:layout_constraintStart_toStartOf="@+id/outerCircleImgView"
+        app:layout_constraintTop_toTopOf="@+id/outerCircleImgView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/coffinImgView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_coffin"
+        app:layout_constraintCircle="@id/androidIconImgView"
+        app:layout_constraintCircleAngle="0"
+        app:layout_constraintCircleRadius="@dimen/radius"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHeight_percent=".07"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/coffinTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coffin"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/coffinImgView"
+        app:layout_constraintStart_toStartOf="@id/coffinImgView"
+        app:layout_constraintTop_toBottomOf="@id/coffinImgView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/lolipopImgView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="79dp"
+        android:src="@drawable/ic_lollipops"
+        app:layout_constraintCircle="@id/androidIconImgView"
+        app:layout_constraintCircleAngle="45"
+        app:layout_constraintCircleRadius="@dimen/radius"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHeight_percent=".07"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lolipopTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lolipop"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/lolipopImgView"
+        app:layout_constraintStart_toStartOf="@id/lolipopImgView"
+        app:layout_constraintTop_toBottomOf="@id/lolipopImgView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/castleImgView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_castle"
+        app:layout_constraintCircle="@id/androidIconImgView"
+        app:layout_constraintCircleAngle="90"
+        app:layout_constraintCircleRadius="@dimen/radius"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHeight_percent=".07"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/castleTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/castle"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/castleImgView"
+        app:layout_constraintStart_toStartOf="@id/castleImgView"
+        app:layout_constraintTop_toBottomOf="@id/castleImgView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/pumpkinImgView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_pumpkin"
+        app:layout_constraintCircle="@id/androidIconImgView"
+        app:layout_constraintCircleAngle="135"
+        app:layout_constraintCircleRadius="@dimen/radius"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHeight_percent=".07"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/pumpkinTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pumpkin"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/pumpkinImgView"
+        app:layout_constraintStart_toStartOf="@id/pumpkinImgView"
+        app:layout_constraintTop_toBottomOf="@id/pumpkinImgView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ripImgView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_grave"
+        app:layout_constraintCircle="@id/androidIconImgView"
+        app:layout_constraintCircleAngle="180"
+        app:layout_constraintCircleRadius="@dimen/radius"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHeight_percent=".07"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/ripTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/r_i_p"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/ripImgView"
+        app:layout_constraintStart_toStartOf="@id/ripImgView"
+        app:layout_constraintTop_toBottomOf="@id/ripImgView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/pumpkinEyesImgView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_pumpkineyes"
+        app:layout_constraintCircle="@id/androidIconImgView"
+        app:layout_constraintCircleAngle="225"
+        app:layout_constraintCircleRadius="@dimen/radius"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHeight_percent=".07"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/pumpkinEyesTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/pumpkinEyesImgView"
+        app:layout_constraintStart_toStartOf="@id/pumpkinEyesImgView"
+        app:layout_constraintTop_toBottomOf="@id/pumpkinEyesImgView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/candleImgView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_candle"
+        app:layout_constraintCircle="@id/androidIconImgView"
+        app:layout_constraintCircleAngle="270"
+        app:layout_constraintCircleRadius="@dimen/radius"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHeight_percent=".07"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/candleTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/candle"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/candleImgView"
+        app:layout_constraintStart_toStartOf="@id/candleImgView"
+        app:layout_constraintTop_toBottomOf="@id/candleImgView" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/witchHatImgView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_witch_hat"
+        app:layout_constraintCircle="@id/androidIconImgView"
+        app:layout_constraintCircleAngle="315"
+        app:layout_constraintCircleRadius="@dimen/radius"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintHeight_percent=".07"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/witchHatTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hat"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/witchHatImgView"
+        app:layout_constraintStart_toStartOf="@id/witchHatImgView"
+        app:layout_constraintTop_toBottomOf="@id/witchHatImgView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

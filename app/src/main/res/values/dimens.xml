@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="std_inset">20dp</dimen>
+    <dimen name="radius">130dp</dimen>
+    <dimen name="icon_dimensions">40dp</dimen>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:innerRadius="0dp"
+    android:shape="ring"
+    android:thicknessRatio="2"
+    android:useLevel="false">
+
+    <solid android:color="@color/outer_circle_color" />
+
+    <gradient
+        android:endColor="@color/outer_circle_gradient_start"
+        android:startColor="@color/outer_circle_gradient_end"
+        android:type="radial"
+        android:gradientRadius="80%p" />
+    <size
+        android:width="300dp"
+        android:height="300dp" />
+    <stroke
+        android:width="4dp"
+        android:color="@color/outer_circle_border_color" />
+
+</shape>

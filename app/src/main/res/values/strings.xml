@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CircleIconsLayout</string>
+    <string name="coffin">Coffin</string>
+    <string name="lolipop">Lolipop</string>
+    <string name="castle">Castle</string>
+    <string name="pumpkin">Pumpkin</string>
+    <string name="r_i_p">R.I.P</string>
+    <string name="hello">Hello</string>
+    <string name="candle">Candle</string>
+    <string name="hat">Hat</string>
+</resources>
